@@ -1,5 +1,5 @@
 # rseat-NLW4
 
-![NLW4](/Wallpaper - 1440x900.png)
+![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
 
-# 1 - Fundamentos do React
+# Dia 1 - Fundamentos do React
