@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import '../styles/global.css';
 
 interface ButtonProps {
     color: string;
