@@ -4,9 +4,9 @@ import { Button } from './components/Button';
 function App() {
   return (
     <div className="App">
-      <Button color="red" />
-      <Button color="yellow" />
-      <Button color="blue" />
+      <Button color="red">Vermelho</Button>
+      <Button color="yellow">Amarelo</Button>
+      <Button color="blue">Azul</Button>
     </div>
   );
 }
