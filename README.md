@@ -4,7 +4,6 @@
 
 # Dia 1 - Fundamentos do React
 
-### Compoentes
 - Fundamentos API
 - Typescript
 * Componente/Conceitos
@@ -14,3 +13,10 @@
 
 
 # Dia 2 - Desvendando o Next.js
+
+> "Consegue fazer com que nossas aplicações em React sejam indexadas por motores de busca..."
+* Conceitos
+  - SPA -> Single Page Application
+  - SSR -> Server-side Rendering
+  - SSG -> Static Site Generator
+- Foi migrado o projeto inicial para Next.js ``` yarn create next-app moveit-next ```
