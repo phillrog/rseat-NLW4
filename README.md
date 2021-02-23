@@ -20,3 +20,4 @@
   - SSR -> Server-side Rendering
   - SSG -> Static Site Generator
 - Foi migrado o projeto inicial para Next.js ``` yarn create next-app moveit-next ```
+- Document
