@@ -1,9 +1,12 @@
 import React from 'react';
+import { Button } from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      <h1>TESTE</h1>
+      <Button />
+      <Button />
+      <Button />
     </div>
   );
 }
