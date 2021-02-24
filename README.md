@@ -22,3 +22,6 @@
 - Foi migrado o projeto inicial para Next.js ``` yarn create next-app moveit-next ```
 - Document
 - Modulação de estilos
+- Estado conforme evento useEffect
+
+> #jornadainfinita
