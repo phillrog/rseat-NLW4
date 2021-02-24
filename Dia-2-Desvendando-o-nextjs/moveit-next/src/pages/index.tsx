@@ -8,7 +8,9 @@ import { Countdown } from "../components/Countdown";
 export default function Home() {
   return (
     <div className={styles.container}>
-
+      <Head>
+        <title>Inicio | move.it</title>
+      </Head>
       <ExperienceBar></ExperienceBar>
 
       <section>
