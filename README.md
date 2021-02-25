@@ -32,3 +32,5 @@
 - ReactJs fragments
 - Funções css
 - Contextos entre componentes
+
+#focopraticaegrupo
