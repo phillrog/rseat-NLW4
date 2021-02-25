@@ -11,6 +11,7 @@
   - Estado
   - Estilização
 
+> #rumoaoproximonivel  
 
 # Dia 2 - Desvendando o Next.js
 
@@ -34,3 +35,5 @@
 - Contextos entre componentes
 
 > #focopraticaegrupo
+
+# Dia 4 - Contextos e desafios
