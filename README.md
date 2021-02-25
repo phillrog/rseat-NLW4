@@ -36,7 +36,7 @@
 
 > #focopraticaegrupo
 
-# Dia 4 - Contextos e desafios
+# Dia 4 - Unindo toda aplicação
 
 - Trabalhado com múltiplos contextos
 - Aprendido a forçar o useEffect executar apenas uma única vez
