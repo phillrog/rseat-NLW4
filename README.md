@@ -37,3 +37,5 @@
 > #focopraticaegrupo
 
 # Dia 4 - Contextos e desafios
+
+- Trabalhado com múltiplos contextos
