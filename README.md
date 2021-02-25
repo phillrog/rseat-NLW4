@@ -29,3 +29,8 @@
 # Dia 3 - Contextos e desafios
 
 - Bos práticas typescript
+- ReactJs fragments
+- Funções css
+- Contextos entre componentes
+
+#focopraticaegrupo
