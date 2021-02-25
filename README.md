@@ -31,3 +31,4 @@
 - Bos práticas typescript
 - ReactJs fragments
 - Funções css
+- Contextos entre componentes
