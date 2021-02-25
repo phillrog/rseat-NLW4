@@ -33,4 +33,4 @@
 - Funções css
 - Contextos entre componentes
 
-#focopraticaegrupo
+> #focopraticaegrupo
