@@ -11,6 +11,7 @@
   - Estado
   - Estilização
 
+> #rumoaoproximonivel  
 
 # Dia 2 - Desvendando o Next.js
 
@@ -34,3 +35,13 @@
 - Contextos entre componentes
 
 > #focopraticaegrupo
+
+# Dia 4 - Contextos e desafios
+
+- Trabalhado com múltiplos contextos
+- Aprendido a forçar o useEffect executar apenas uma única vez
+- Foi aprendido a solicitar permissões de notificação
+- Foi aprendido a utilizar a API de Notificação do browser
+- Foi implementado audio sinalizando novo desafio quando aparece a notificação
+
+> #NeverStopLearning
