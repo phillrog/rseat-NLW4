@@ -25,3 +25,7 @@
 - Estado conforme evento useEffect
 
 > #jornadainfinita
+
+# Dia 3 - Contextos e desafios
+
+- Bos práticas typescript
