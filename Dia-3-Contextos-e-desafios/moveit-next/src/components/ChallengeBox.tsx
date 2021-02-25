@@ -9,7 +9,7 @@ export function ChallengeBox() {
                     <header>Ganhe 400 xp</header>
 
                     <main>
-                        <img src={`icons/bodt.svg`} alt="" />
+                        <img src={`icons/body.svg`} alt="" />
                         <strong>Novo desafio</strong>
                         <p>Levante e faça uma caminhada em 3 minutos.</p>
                     </main>
