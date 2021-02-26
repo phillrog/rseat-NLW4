@@ -8,27 +8,30 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import React from "react";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { GetServerSideProps } from 'next';
+import { ChallengesProvider } from "../contexts/ChallengeContexts";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Inicio | move.it</title>
-      </Head>
-      <ExperienceBar></ExperienceBar>
-      <CountdownProvider>
-        <section>
-          <div>
-            <Profile />
-            <CompletedChallenges />
-            <Countdown />
-          </div>
-          <div>
-            <ChallengeBox />
-          </div>
-        </section>
-      </CountdownProvider>
-    </div>
+    <ChallengesProvider>
+      <div className={styles.container}>
+        <Head>
+          <title>Inicio | move.it</title>
+        </Head>
+        <ExperienceBar></ExperienceBar>
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
+            <div>
+              <ChallengeBox />
+            </div>
+          </section>
+        </CountdownProvider>
+      </div>
+    </ChallengesProvider>
   )
 }
 
