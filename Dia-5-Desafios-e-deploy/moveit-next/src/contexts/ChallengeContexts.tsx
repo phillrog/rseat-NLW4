@@ -3,7 +3,10 @@ import challenges from '../../../../challenge.json';
 import Cookies from 'js-cookie';
 
 interface ChallengesProviderProps {
-    children: ReactNode;
+    children: ReactNode,
+    level: number,
+    currentExperience: number,
+    challengesCompleted: number
 }
 
 interface ChallengesContextData {
