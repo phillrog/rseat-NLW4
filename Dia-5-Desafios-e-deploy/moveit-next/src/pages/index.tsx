@@ -7,6 +7,7 @@ import { Countdown } from "../components/Countdown";
 import { ChallengeBox } from "../components/ChallengeBox";
 import React from "react";
 import { CountdownProvider } from "../contexts/CountdownContext";
+import { GetServerSideProps } from 'next';
 
 export default function Home() {
   return (
@@ -29,4 +30,16 @@ export default function Home() {
       </CountdownProvider>
     </div>
   )
+}
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  const { level, currentExperience, challengesCompleted } = ctx.req.cookies;
+
+  return {
+    props: {
+      level,
+      currentExperience,
+      challengesCompleted
+    }
+  };
 }

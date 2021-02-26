@@ -45,3 +45,7 @@
 - Foi implementado audio sinalizando novo desafio quando aparece a notificação
 
 > #NeverStopLearning
+
+# Dia 5 - Desafios e deploy
+
+- Foi implementado ```getServerSideProps```
