@@ -49,3 +49,8 @@
 # Dia 5 - Desafios e deploy
 
 - Foi implementado ```getServerSideProps```
+- Conhecendo Vercel
+- Foi criado conta no vercel com github
+- Foi instalado o cli da vercel com ```npm i -g vercel```
+- Foi publicado
+
