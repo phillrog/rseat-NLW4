@@ -66,6 +66,16 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 
 --- 
 
+<p align="center">
+ <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-wallpapers">Wallpapers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+ <a href="#-tech">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-license">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-dicas">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+
 # 🎨 Layout
 
 Você pode ver o layout original do projeto através deste [link](https://www.figma.com/file/wPMxi6R9dVLwsj7BM1qlKs/Move.it-1.0-(Copy)?node-id=160%3A2761). É necessário uma conta no Figma para acessá-lo.
@@ -78,8 +88,8 @@ Lista de imagens inéditas do NLW4. [Link](https://drive.google.com/drive/folder
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
-* ReactJS
-* NextJS
+- **[ReactJS](https://developer.mozilla.org/en-US/docs/Glossary/HTML)**
+- **[NextJS](https://sass-lang.com/documentation/syntax)**
 
 🖊️ Licença
 O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
