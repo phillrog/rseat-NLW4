@@ -175,3 +175,8 @@
     transition-delay:200ms;
   }
   
+  .username > .erro {
+    
+    margin-top: 20px !important;
+
+  }

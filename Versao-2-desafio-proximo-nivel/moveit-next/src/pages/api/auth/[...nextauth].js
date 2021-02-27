@@ -8,9 +8,8 @@ export default (req, res) => NextAuth(req, res,
     providers: [
       Providers.GitHub({
         clientId: process.env.GITHUB_CLIENT_ID,
-        clientSecret: process.env.GITHUB_CLIENT_SECRET
+        clientSecret: process.env.GITHUB_CLIENT_SECRET,
       }),
-      // ...add more providers here
     ],
 
     // A database is optional, but required to persist accounts in a database
@@ -18,5 +17,5 @@ export default (req, res) => NextAuth(req, res,
     theme: "dark",
     jwt: {
       secret: process.env.JWT_JWT_SECRET
-    },
+    }
   })

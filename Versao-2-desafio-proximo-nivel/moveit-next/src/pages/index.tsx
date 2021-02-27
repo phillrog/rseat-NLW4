@@ -12,6 +12,8 @@ import { ChallengesProvider } from "../contexts/ChallengeContexts";
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { Login } from "../components/Login";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 interface HomeProps {
   level: number,
   currentExperience: number,
