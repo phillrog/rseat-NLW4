@@ -10,6 +10,7 @@
  <a href="#-atenção---dicas-especiais">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-ambiente-da-aplicação">Ambiente da Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-demo">Demo</a>
 </p>
 
 ![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
@@ -125,3 +126,9 @@ Vá na raiz do projeto, nesse caso "...Dia-5-Desafios-e-deploy\moveit-next", exe
 ### Deploy
 
 Execute o comando na raiz do diretório do projeto ```vercel --prod``` 
+
+# 🛸 Demo
+
+Publicação no vercel [Clique aqui](https://moveit-phillrog.vercel.app/)
+
+Obs: Aceite a permissão de notificação para ouvir um som ao receber notificação de novos desafios
