@@ -7,7 +7,7 @@
  <a href="#-wallpapers">Wallpapers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-atenção---dicas-especiais">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-dicas-especiais">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-ambiente-da-aplicação">Ambiente da Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-demo">Demo</a>
@@ -99,7 +99,7 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
 
-# 💰 Atenção - Dicas especiais
+# 💰 Dicas especiais
 
 Nesse conteúdo extra, segue algumas dicas rápidas, **direto ao ponto**, para ajudar você configurar suas redes sociais e ter maior acesso às oportunidades no universo da **programação**.
 [Clique aqui](https://www.notion.so/GitHub-LinkedIn-NLW-9a057f4f92ab4392903ff3a588acb2ab)
