@@ -69,7 +69,7 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 <p align="center">
  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-wallpapers">Wallpapers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
- <a href="#-tech">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-license">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-dicas">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -91,7 +91,8 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 - **[ReactJS](https://developer.mozilla.org/en-US/docs/Glossary/HTML)**
 - **[NextJS](https://sass-lang.com/documentation/syntax)**
 
-🖊️ Licença
+# 🖊️ Licença
+
 O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.
 
 # 💰 Atenção - Dicas especiais
@@ -100,7 +101,7 @@ Nesse conteúdo extra, segue algumas dicas rápidas, **direto ao ponto**, para a
 [Clique aqui](https://www.notion.so/GitHub-LinkedIn-NLW-9a057f4f92ab4392903ff3a588acb2ab)
 
 
-# Aplicação
+# 💻 Aplicação
 
 ### Configurar ambiente
 
