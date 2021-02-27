@@ -3,7 +3,7 @@
 ![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
 
 
-<p align="center">
+<p align="left">
 <a href="#-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 <a href="#-etapas">Etapas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -15,6 +15,7 @@
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-demo">Demo</a>
 </p>
+
 ---
 
 # 🏆 Objetivo
