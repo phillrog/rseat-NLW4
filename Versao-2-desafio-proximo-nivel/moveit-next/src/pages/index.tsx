@@ -9,6 +9,8 @@ import React from "react";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { GetServerSideProps } from 'next';
 import { ChallengesProvider } from "../contexts/ChallengeContexts";
+import { signIn, signOut, useSession } from 'next-auth/client';
+import { Login } from "../components/Login";
 
 interface HomeProps {
   level: number,
@@ -17,32 +19,50 @@ interface HomeProps {
 }
 
 export default function Home(props: HomeProps) {
+  const [session, loading] = useSession();
+
   return (
-    <ChallengesProvider level={props.level}
-      currentExperience={props.currentExperience}
-      challengesCompleted={props.challengesCompleted}
-    >
-      <div className={styles.container}>
-        <Head>
-          <title>Inicio | move.it</title>
-        </Head>
-        <ExperienceBar></ExperienceBar>
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
+    <div>
+      <>
+        {!session && <>
+          <Login />
+          <button onClick={() => signIn('github')}>GitHub Login</button>
+        </>}
+        {session && <>
+          Signed in as {session.user.email} <br />
+          {session.user.image && <img src={session.user.image} style={{ borderRadius: '50%', width: '25px', height: '25px' }} />}
+          <button onClick={() => signOut()}>Sign out</button>
+
+          <ChallengesProvider level={props.level}
+            currentExperience={props.currentExperience}
+            challengesCompleted={props.challengesCompleted}
+          >
+            <div className={styles.container}>
+              <Head>
+                <title>Inicio | move.it</title>
+              </Head>
+              <ExperienceBar></ExperienceBar>
+              <CountdownProvider>
+                <section>
+                  <div>
+                    <Profile />
+                    <CompletedChallenges />
+                    <Countdown />
+                  </div>
+                  <div>
+                    <ChallengeBox />
+                  </div>
+                </section>
+              </CountdownProvider>
             </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
-      </div>
-    </ChallengesProvider>
+
+          </ChallengesProvider>
+        </>}
+      </>
+    </div>
   )
 }
+
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { level, currentExperience, challengesCompleted } = ctx.req.cookies;

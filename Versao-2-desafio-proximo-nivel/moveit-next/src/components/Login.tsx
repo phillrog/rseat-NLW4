@@ -8,7 +8,7 @@ export function Login() {
                 <div className={styles.linha2}></div>
                 <div className={styles.linha3}></div>
             </div>
-            <div className={styles.v149854_105}>
+            <div className={styles.logo}>
 
                 <img src="icons/logo.svg" />
 
