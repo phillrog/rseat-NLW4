@@ -129,6 +129,8 @@ Execute o comando na raiz do diretório do projeto ```vercel --prod```
 
 # 🛸 Demo
 
+![git](/app.gif)
+
 Publicação no vercel <a href="https://moveit-phillrog.vercel.app" target="_blank">Clique aqui!</a>
 
 Obs: Aceite a permissão de notificação para ouvir um som ao receber notificação de novos desafios
