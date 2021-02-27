@@ -1,5 +1,17 @@
 # rseat-NLW4
 
+<p align="center">
+<a href="#-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#-etapas">Etapas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-wallpapers">Wallpapers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+ <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-atenção---dicas-especiais">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-ambiente-da-aplicação">Ambiente da Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
 ![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
 
 # Objetivo
@@ -8,9 +20,9 @@ Projeto feito durante a Next Level Week #4 da Rocketseat. O intuito do evento er
 
 A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela seja lembrada de fazer uma pausa e, durante a pausa, realizar um exercício específico que a aplicação desponibiliza. Após a realização do exercício o usuário confirma que realizou o exercício e recebe uma motivação (no caso foi utilizado a temática de RPGs, como ganhar experiência para subir de level.) e segue para o próximo timer.
 
-# Etapas
+# 💡 Etapas
 
-# Dia 1 - Fundamentos do React
+# 🗓️ Dia 1 - Fundamentos do React
 
 - Fundamentos API
 - Typescript
@@ -21,7 +33,7 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 
 > #rumoaoproximonivel  
 
-# Dia 2 - Desvendando o Next.js
+# 🗓️ Dia 2 - Desvendando o Next.js
 
 > "Consegue fazer com que nossas aplicações em React sejam indexadas por motores de busca..."
 * Conceitos
@@ -35,7 +47,7 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 
 > #jornadainfinita
 
-# Dia 3 - Contextos e desafios
+# 🗓️ Dia 3 - Contextos e desafios
 
 - Bos práticas typescript
 - ReactJs fragments
@@ -44,7 +56,7 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 
 > #focopraticaegrupo
 
-# Dia 4 - Unindo toda aplicação
+# 🗓️ Dia 4 - Unindo toda aplicação
 
 - Trabalhado com múltiplos contextos
 - Aprendido a forçar o useEffect executar apenas uma única vez
@@ -54,7 +66,7 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 
 > #NeverStopLearning
 
-# Dia 5 - Desafios e deploy
+# 🗓️ Dia 5 - Desafios e deploy
 
 - Foi implementado ```getServerSideProps```
 - Conhecendo Vercel
@@ -65,15 +77,6 @@ A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela 
 > #missioncomplete
 
 --- 
-
-<p align="center">
- <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-wallpapers">Wallpapers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
- <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-license">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-dicas">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-</p>
 
 
 # 🎨 Layout
@@ -101,9 +104,9 @@ Nesse conteúdo extra, segue algumas dicas rápidas, **direto ao ponto**, para a
 [Clique aqui](https://www.notion.so/GitHub-LinkedIn-NLW-9a057f4f92ab4392903ff3a588acb2ab)
 
 
-# 💻 Aplicação
+# 💻 Ambiente da Aplicação
 
-### Configurar ambiente
+### Configurar
 
 Siga os passos para configurar seu ambiente [Ambiente](https://www.notion.so/Configura-es-do-ambiente-React-76f2963a042f45b9b9b567a2795945b8)
 
@@ -111,7 +114,7 @@ Siga os passos para configurar seu ambiente [Ambiente](https://www.notion.so/Con
 
 Execute ```yarn dev``` para rodar localhost.
 
-### Vercel
+# 🧿 Vercel
 
 Acesse https://vercel.com/ , cadastre-se.
 
