@@ -1,4 +1,7 @@
-# rseat-NLW4
+# Rocketseat - Next Level Week 4
+
+![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
+
 
 <p align="center">
 <a href="#-objetivo">Objetivo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -12,11 +15,10 @@
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-demo">Demo</a>
 </p>
+---
 
-![NLW4](/Wallpaper%20-%201440x900.png?raw=true)
+# 🏆 Objetivo
 
-# Objetivo
-💻 Sobre
 Projeto feito durante a Next Level Week #4 da Rocketseat. O intuito do evento era para realizar o desenvolvimento de uma aplicação voltada para todos que ficam diretamente na frente do computador (principalmente desenvolvedores) através do uso de tecnologias que estão em alta no mercado (ReactJS - Foco em utilização do NextJS).
 
 A ideia é de que o usuário utiliza de um timer para que a cada 25 minutos ela seja lembrada de fazer uma pausa e, durante a pausa, realizar um exercício específico que a aplicação desponibiliza. Após a realização do exercício o usuário confirma que realizou o exercício e recebe uma motivação (no caso foi utilizado a temática de RPGs, como ganhar experiência para subir de level.) e segue para o próximo timer.
