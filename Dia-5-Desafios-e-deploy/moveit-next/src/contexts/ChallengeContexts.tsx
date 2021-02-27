@@ -34,6 +34,7 @@ export function ChallengesProvider({ children,
     ...rest
 }: ChallengesProviderProps) {
     const [level, setLevel] = useState(rest.level ?? 1);
+    const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
     const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
     const [activeChallenge, setActiveChallenge] = useState(null);
@@ -51,6 +52,7 @@ export function ChallengesProvider({ children,
 
     function levelUp() {
         setLevel(level + 1);
+        setIsLevelUpModalOpen(true);
     }
 
     function startNewChallenge() {
@@ -106,7 +108,7 @@ export function ChallengesProvider({ children,
             }}
         >
             {children}
-            <LevelUpModal></LevelUpModal>
+            {isLevelUpModalOpen && <LevelUpModal />}
         </ChallengesContext.Provider>
     );
 }
