@@ -31,15 +31,11 @@ export default function Home(props: HomeProps) {
       <>
         {!session && <>
           <Login />
-          <button onClick={() => signIn('github')}>GitHub Login</button>
         </>}
         {session && <>
-
-          Logado como {session.user.email} <br />
-          {session.user.image && <img src={session.user.image} style={{ borderRadius: '50%', width: '25px', height: '25px' }} />}
-
-          <button onClick={() => signOut()}>Sign out</button>
-
+          <div className={styles.logado}>
+            <p>Logado como {session.user.email}<button onClick={() => signOut()}>Sair</button></p>
+          </div>
           <ChallengesProvider level={props.level}
             currentExperience={props.currentExperience}
             challengesCompleted={props.challengesCompleted}
