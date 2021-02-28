@@ -19,7 +19,7 @@
 
 .logado{
     position: absolute;
-    padding-left: 30rem;
+    padding-left: 41rem;
     
 }
 
@@ -41,5 +41,5 @@
     font-size: 1.25rem;
     font-weight: 600;
     transition: background-color 0.2s;
-    margin: 0 14rem;
+    margin-left: 15rem
 }
