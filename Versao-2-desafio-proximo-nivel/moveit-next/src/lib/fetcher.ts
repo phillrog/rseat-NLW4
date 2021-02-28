@@ -1,4 +1,9 @@
 import useSWR from "swr";
+import axios from 'axios';
+
+export const api = axios.create({
+    baseURL: process.env.API
+})
 
 export function useFetch(url: string, revalidateOnFocus: boolean = false) {
     const { data, error } = useSWR(url, async (url) => {
