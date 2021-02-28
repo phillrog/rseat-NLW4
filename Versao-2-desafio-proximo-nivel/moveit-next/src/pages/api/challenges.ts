@@ -29,11 +29,13 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
             const user = req.query.user;
             const response = await db
                 .collection("challenges")
-                .findOne({ user });
+                .find({ user }).sort({ currentExperience: -1 }).toArray();
+
+            const ret = response[0] || {};
             return res.status(200).json({
-                currentExperience: response.currentExperience,
-                challengesCompleted: response.challengesCompleted,
-                level: response.level
+                currentExperience: ret.currentExperience || 0,
+                challengesCompleted: ret.challengesCompleted || 0,
+                level: ret.level || 1
             })
         }
         case 'POST': {
