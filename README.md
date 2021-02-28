@@ -14,7 +14,7 @@
  <a href="#-ambiente-da-aplicação">Ambiente da Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-versão">Versão 2.0</a>
+ <a href="#️-versão-20">Versão 2.0</a>
 </p>
 
 ---
@@ -146,4 +146,8 @@ Obs: Aceite a permissão de notificação para ouvir um som ao receber notifica�
 
 - Foi utilizado a biblioteca [next-js auth](https://github.com/nextauthjs/next-auth) para efetuar o login com GitHub
 
-![git](/app2-login.gif)
+Publicação da versão 2.0 no vercel <a href="https://moveit-versao-2.vercel.app/" target="_blank">Clique aqui!</a>
+
+Login com github
+
+![login](/app-2-login.gif)
