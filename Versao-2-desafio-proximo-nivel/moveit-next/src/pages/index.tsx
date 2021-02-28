@@ -13,6 +13,8 @@ import { signIn, signOut, useSession } from 'next-auth/client';
 import { Login } from "../components/Login";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { api, useFetch } from "../lib/fetcher";
+import Cookies from "js-cookie";
 
 interface HomeProps {
   level: number,

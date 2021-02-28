@@ -25,7 +25,16 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
     switch (req.method) {
         case 'GET': {
-            break;
+
+            const user = req.query.user;
+            const response = await db
+                .collection("challenges")
+                .findOne({ user });
+            return res.status(200).json({
+                currentExperience: response.currentExperience,
+                challengesCompleted: response.challengesCompleted,
+                level: response.level
+            })
         }
         case 'POST': {
             const challenge = req.body;

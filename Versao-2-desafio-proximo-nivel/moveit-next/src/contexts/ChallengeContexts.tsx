@@ -46,6 +46,16 @@ export function ChallengesProvider({ children,
     const { data } = useFetch(`/api/users?id=${session.user.email}`);
     const [isFinished, setIsFinished] = useState(false);
 
+    if (data) {
+        api.get(`/api/challenges?user=${data.users[0]._id}`, {
+        }).then((response) => {
+            console.log(response);
+            Cookies.set('level', String(response.data.level));
+            Cookies.set('currentExperience', String(response.data.currentExperience));
+            Cookies.set('challengesCompleted', String(response.data.challengesCompleted));
+        });
+    }
+
     useEffect(() => {
         Notification.requestPermission();
     }, []);
