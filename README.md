@@ -142,6 +142,8 @@ Obs: Aceite a permissão de notificação para ouvir um som ao receber notifica�
 
 # ⚙️ Versão 2.0
 
-Login com github
+### Login com github
+
+- Foi utilizado a biblioteca [next-js auth](https://github.com/nextauthjs/next-auth) para efetuar o login com GitHub
 
 ![git](/app2-login.gif)
