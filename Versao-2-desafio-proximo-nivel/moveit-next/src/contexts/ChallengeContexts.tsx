@@ -2,6 +2,8 @@ import { createContext, ReactNode, useEffect, useState } from 'react';
 import challenges from '../../challenge.json';
 import Cookies from 'js-cookie';
 import { LevelUpModal } from '../components/LevelUpModal';
+import { useFetch, api } from '../lib/fetcher';
+import { useSession } from 'next-auth/client';
 
 interface ChallengesProviderProps {
     children: ReactNode,
@@ -40,6 +42,9 @@ export function ChallengesProvider({ children,
     const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
     const [activeChallenge, setActiveChallenge] = useState(null);
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
+    const [session] = useSession();
+    const { data } = useFetch(`/api/users?id=${session.user.email}`);
+    const [isFinished, setIsFinished] = useState(false);
 
     useEffect(() => {
         Notification.requestPermission();
@@ -49,6 +54,21 @@ export function ChallengesProvider({ children,
         Cookies.set('level', String(level));
         Cookies.set('currentExperience', String(currentExperience));
         Cookies.set('challengesCompleted', String(challengesCompleted));
+
+        if (isFinished) {
+            api.post('/api/challenges', {
+                level,
+                currentExperience,
+                challengesCompleted,
+                challenge: activeChallenge,
+                user: data.users[0]._id
+            }).then((response) => {
+                console.log('Gravou desafio - ', response)
+            });
+            setIsFinished(false);
+        }
+        setActiveChallenge(null);
+
     }, [level, currentExperience, challengesCompleted]);
 
     function levelUp() {
@@ -92,9 +112,8 @@ export function ChallengesProvider({ children,
             finalExperience = finalExperience - experienceToNextLevel;
             levelUp();
         }
-
+        setIsFinished(true);
         setCurrentExperience(finalExperience);
-        setActiveChallenge(null);
         setChallengesCompleted(challengesCompleted + 1);
     }
 
