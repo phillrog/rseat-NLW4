@@ -142,6 +142,10 @@ Obs: Aceite a permissão de notificação para ouvir um som ao receber notifica�
 
 # ⚙️ Versão 2.0
 
+### Login com github
+
+- Foi utilizado a biblioteca [next-js auth](https://github.com/nextauthjs/next-auth) para efetuar o login com GitHub
+
 Publicação da versão 2.0 no vercel <a href="https://moveit-versao-2.vercel.app/" target="_blank">Clique aqui!</a>
 
 Login com github

@@ -13,6 +13,8 @@ import { signIn, signOut, useSession } from 'next-auth/client';
 import { Login } from "../components/Login";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
+import { LeaderBoard } from "../components/LeaderBoard";
 
 interface HomeProps {
   level: number,
@@ -22,6 +24,15 @@ interface HomeProps {
 
 export default function Home(props: HomeProps) {
   const [session, loading] = useSession();
+  const [isToShowRanking, setIsToShowRanking] = useState(false);
+
+  function mostrarRanking() {
+    setIsToShowRanking(true)
+  }
+
+  function mostrarHome() {
+    setIsToShowRanking(false)
+  }
 
   return (
     <div>
@@ -29,15 +40,11 @@ export default function Home(props: HomeProps) {
       <>
         {!session && <>
           <Login />
-          <button onClick={() => signIn('github')}>GitHub Login</button>
         </>}
         {session && <>
-
-          Logado como {session.user.email} <br />
-          {session.user.image && <img src={session.user.image} style={{ borderRadius: '50%', width: '25px', height: '25px' }} />}
-
-          <button onClick={() => signOut()}>Sign out</button>
-
+          <div className={styles.logado}>
+            <p>Logado como {session.user.email}<button onClick={() => signOut()}>Sair</button></p>
+          </div>
           <ChallengesProvider level={props.level}
             currentExperience={props.currentExperience}
             challengesCompleted={props.challengesCompleted}
@@ -47,9 +54,9 @@ export default function Home(props: HomeProps) {
                 <title>Inicio | move.it</title>
               </Head>
               <div style={{
-                position: 'absolute',
+                position: 'fixed',
                 width: '112px',
-                height: '820px',
+                height: '100%',
                 left: '0px',
                 top: '0px',
                 backgroundColor: '#f7f7f8'
@@ -61,7 +68,7 @@ export default function Home(props: HomeProps) {
                   top: '3.9%',
                   bottom: '90.98%'
                 }}
-                  src="icons/logo-min.svg" /> </p>
+                  src="icons/logo-min.svg" onClick={() => mostrarRanking()} /> </p>
 
                 <div style={{
                   position: 'absolute',
@@ -72,7 +79,7 @@ export default function Home(props: HomeProps) {
                   cursor: 'pointer',
                   textAlign: 'end',
                 }}>
-                  <img src="icons/awards.svg" />
+                  <img src="icons/awards.svg" onClick={() => mostrarRanking()} />
                 </div>
                 <div style={{
                   position: 'absolute',
@@ -86,19 +93,26 @@ export default function Home(props: HomeProps) {
                   <img src="icons/casa.svg" />
                 </div>
               </div>
-              <ExperienceBar></ExperienceBar>
-              <CountdownProvider>
-                <section>
-                  <div>
-                    <Profile />
-                    <CompletedChallenges />
-                    <Countdown />
-                  </div>
-                  <div>
-                    <ChallengeBox />
-                  </div>
-                </section>
-              </CountdownProvider>
+              {!isToShowRanking && (
+                <>
+                  <ExperienceBar></ExperienceBar>
+                  <CountdownProvider>
+                    <section>
+                      <div>
+                        <Profile />
+                        <CompletedChallenges />
+                        <Countdown />
+                      </div>
+                      <div>
+                        <ChallengeBox />
+                      </div>
+                    </section>
+                  </CountdownProvider>
+                </>
+              )}
+              {isToShowRanking &&
+                <LeaderBoard />
+              }
             </div>
 
           </ChallengesProvider>
