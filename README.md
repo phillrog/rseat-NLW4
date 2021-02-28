@@ -144,4 +144,4 @@ Obs: Aceite a permissão de notificação para ouvir um som ao receber notifica�
 
 Login com github
 
-![login](/app2-login.gif)
+![login](/app-2-login.gif)
