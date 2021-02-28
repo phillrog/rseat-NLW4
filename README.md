@@ -13,7 +13,8 @@
  <a href="#-dicas-especiais">Dicas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-ambiente-da-aplicação">Ambiente da Aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <a href="#-vercel">Vercel</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
- <a href="#-demo">Demo</a>
+ <a href="#-demo">Demo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+ <a href="#-versão">Versão 2.0</a>
 </p>
 
 ---
@@ -137,3 +138,10 @@ Execute o comando na raiz do diretório do projeto ```vercel --prod```
 Publicação no vercel <a href="https://moveit-phillrog.vercel.app" target="_blank">Clique aqui!</a>
 
 Obs: Aceite a permissão de notificação para ouvir um som ao receber notificação de novos desafios
+
+
+# ⚙️ Versão 2.0
+
+Login com github
+
+![git](/app2-login.gif)
