@@ -25,14 +25,17 @@ export default function Home(props: HomeProps) {
 
   return (
     <div>
+
       <>
         {!session && <>
           <Login />
           <button onClick={() => signIn('github')}>GitHub Login</button>
         </>}
         {session && <>
-          Signed in as {session.user.email} <br />
+
+          Logado como {session.user.email} <br />
           {session.user.image && <img src={session.user.image} style={{ borderRadius: '50%', width: '25px', height: '25px' }} />}
+
           <button onClick={() => signOut()}>Sign out</button>
 
           <ChallengesProvider level={props.level}
@@ -43,6 +46,46 @@ export default function Home(props: HomeProps) {
               <Head>
                 <title>Inicio | move.it</title>
               </Head>
+              <div style={{
+                position: 'absolute',
+                width: '112px',
+                height: '820px',
+                left: '0px',
+                top: '0px',
+                backgroundColor: '#f7f7f8'
+              }}>
+                <p><img style={{
+                  position: 'absolute',
+                  left: '28.57%',
+                  right: '28.57%',
+                  top: '3.9%',
+                  bottom: '90.98%'
+                }}
+                  src="icons/logo-min.svg" /> </p>
+
+                <div style={{
+                  position: 'absolute',
+                  width: '72px',
+                  height: '56px',
+                  left: '0px',
+                  top: '422px',
+                  cursor: 'pointer',
+                  textAlign: 'end',
+                }}>
+                  <img src="icons/awards.svg" />
+                </div>
+                <div style={{
+                  position: 'absolute',
+                  width: '72px',
+                  height: '56px',
+                  left: '0px',
+                  top: '350px',
+                  textAlign: 'end',
+                  cursor: 'pointer'
+                }}>
+                  <img src="icons/casa.svg" />
+                </div>
+              </div>
               <ExperienceBar></ExperienceBar>
               <CountdownProvider>
                 <section>
@@ -61,7 +104,7 @@ export default function Home(props: HomeProps) {
           </ChallengesProvider>
         </>}
       </>
-    </div>
+    </div >
   )
 }
 
