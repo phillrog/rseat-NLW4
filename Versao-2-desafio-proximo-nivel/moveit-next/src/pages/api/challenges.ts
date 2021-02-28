@@ -17,18 +17,27 @@ interface Challenge {
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-
     const { db, client } = await connectToDatabase();
-    const challenge = req.body;
 
-    if (client.isConnected()) {
-        await db
-            .collection("challenges")
-            .insertOne(challenge);
-
-        return res.status(201).json({ sucesso: true })
+    if (!client.isConnected()) {
+        return res.status(500).json({ error: 'client DB is not connected' });
     }
 
-    return res.status(500).json({ error: 'client DB is not connected' })
+    switch (req.method) {
+        case 'GET': {
+            break;
+        }
+        case 'POST': {
+            const challenge = req.body;
 
+            await db
+                .collection("challenges")
+                .insertOne(challenge);
+
+            return res.status(201).json({ sucesso: true });
+        }
+        default:
+            res.status(405).end()
+            break;
+    }
 }
