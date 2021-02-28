@@ -1,3 +1,35 @@
-.container{
+.container {
+
+}
+
+.container h1 {
+    position: absolute;
+width: 223px;
+height: 46px;
+left: 296px;
+top: 40px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 46px;
+
+
+
+color: var(--Titulos)
+}
+
+.grid {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr 2fr;
+    
+}
+
+.gridLinha {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr 2fr;
     
 }

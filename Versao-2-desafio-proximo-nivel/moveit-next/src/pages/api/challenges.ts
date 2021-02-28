@@ -27,16 +27,29 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         case 'GET': {
 
             const user = req.query.user;
-            const response = await db
-                .collection("challenges")
-                .find({ user }).sort({ currentExperience: -1 }).toArray();
 
-            const ret = response[0] || {};
-            return res.status(200).json({
-                currentExperience: ret.currentExperience || 0,
-                challengesCompleted: ret.challengesCompleted || 0,
-                level: ret.level || 1
-            })
+            if (user) {
+                const response = await db
+                    .collection("challenges")
+                    .find({ user }).sort({ currentExperience: -1 }).toArray();
+
+                const ret = response[0] || {};
+                return res.status(200).json({
+                    currentExperience: ret.currentExperience || 0,
+                    challengesCompleted: ret.challengesCompleted || 0,
+                    level: ret.level || 1
+                })
+            } else {
+                const response: ChallengeData[] = await db
+                    .collection("challenges")
+                    .find()
+                    .sort({ currentExperience: -1 }).toArray();
+
+                if (response && response.length > 0)
+                    return res.status(200).json({ response });
+                else
+                    return res.status(200).json([]);
+            }
         }
         case 'POST': {
             const challenge = req.body;

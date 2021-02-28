@@ -49,7 +49,6 @@ export function ChallengesProvider({ children,
     if (data) {
         api.get(`/api/challenges?user=${data.users[0]._id}`, {
         }).then((response) => {
-            console.log(response);
             Cookies.set('level', String(response.data.level));
             Cookies.set('currentExperience', String(response.data.currentExperience));
             Cookies.set('challengesCompleted', String(response.data.challengesCompleted));
