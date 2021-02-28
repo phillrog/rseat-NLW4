@@ -142,6 +142,8 @@ Obs: Aceite a permissão de notificação para ouvir um som ao receber notifica�
 
 # ⚙️ Versão 2.0
 
+Publicação da versão 2.0 no vercel <a href="https://moveit-versao-2.vercel.app/" target="_blank">Clique aqui!</a>
+
 Login com github
 
 ![login](/app-2-login.gif)
